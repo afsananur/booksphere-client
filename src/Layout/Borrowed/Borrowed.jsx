@@ -21,7 +21,7 @@ const Borrowed = ({borrowedBook,refetch}) => {
             confirmButtonText: "Yes, Return it!"
           }).then((result) => {
             if (result.isConfirmed) {
-                axios.delete(`http://localhost:3000/borrowing/${id}`)
+                axios.delete(`https://booksphere-3dfi.onrender.com/borrowing/${id}`)
                 .then((res)=>{
                     console.log(res.data)
                     Swal.fire({
@@ -38,7 +38,7 @@ const Borrowed = ({borrowedBook,refetch}) => {
 
           
 
-          axios.patch(`http://localhost:3000/allbooks/${category_name}/${_id}/${action}`,bookQuantity)
+          axios.patch(`https://booksphere-3dfi.onrender.com/allbooks/${category_name}/${_id}/${action}`,bookQuantity)
           .then((res) => {
               console.log(res.data)
               refetch();

@@ -34,7 +34,7 @@ const BookDetails = () => {
         //     },
         //     body:JSON.stringify(borrower)
         // })
-        axios.post('http://localhost:3000/borrowing', borrower)
+        axios.post('https://booksphere-3dfi.onrender.com/borrowing', borrower)
         
             .then(() => {
                 console.log(data);
@@ -47,7 +47,7 @@ const BookDetails = () => {
                     timer: 2500
                 })
             })
-        axios.patch(`http://localhost:3000/allbooks/${category}/${id}/${action}`, bookQuantity)
+        axios.patch(`https://booksphere-3dfi.onrender.com/allbooks/${category}/${id}/${action}`, bookQuantity)
             .then((res) => {
                 console.log(res.data)
                 refetch()

@@ -7,7 +7,7 @@ const Categories = () => {
     const [categories, setCategories]= useState([]);
 
     useEffect(()=> {
-        fetch('http://localhost:3000/categories')
+        fetch('https://booksphere-3dfi.onrender.com/categories')
         .then(res=> res.json())
         .then(data => setCategories(data))
     },[])

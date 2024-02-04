@@ -6,7 +6,7 @@ const useCategoryBooks = (categoryName) => {
     const { data, isLoading ,isFetched,refetch} = useQuery({
         queryKey: ['allbooks'],
         queryFn: async () => {
-            const data = await fetch(`http://localhost:3000/allbooks/${categoryName}`)
+            const data = await fetch(`https://booksphere-3dfi.onrender.com/allbooks/${categoryName}`)
             return await data.json()
         },
     });
