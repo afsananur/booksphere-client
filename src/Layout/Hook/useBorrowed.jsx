@@ -9,7 +9,7 @@ const useBorrowed = () => {
         const { data, isLoading ,isFetched,refetch} = useQuery({
             queryKey: ['borrowedBooks'],
             queryFn: async () => {
-                const data = await fetch(`https://booksphere-3dfi.onrender.com/borrowing?email=${user?.email}`, )
+                const data = await fetch(`https://booksphere-server.onrender.com/borrowing?email=${user?.email}`, )
                 return await data.json()
             },
         });

@@ -17,7 +17,7 @@ const AddBook = () => {
        
         const addBook = { img, books_name, author_name, category_name, rating, quantity, description ,
          addedDate: addedDate.toISOString()}
-        axios.post(`https://booksphere-3dfi.onrender.com/allbooks`, addBook)
+        axios.post(`https://booksphere-server.onrender.com/allbooks`, addBook)
             .then(res => {
                 console.log(res.data)
                 if(res.data.modifiedCount > 0){

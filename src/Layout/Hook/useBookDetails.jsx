@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 
 
 const useBookDetails = ({ category, id }) => {
-    const url = `https://booksphere-3dfi.onrender.com/allbooks/${category}/${id}`;
+    const url = `https://booksphere-server.onrender.com/allbooks/${category}/${id}`;
 
     const { data, isLoading, isFetched, refetch} = useQuery({
         queryKey: ['Books', category, id], // Include category and id in the query key

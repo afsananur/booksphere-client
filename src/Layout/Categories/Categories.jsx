@@ -7,7 +7,7 @@ const Categories = () => {
     const [categories, setCategories]= useState([]);
 
     useEffect(()=> {
-        fetch('https://booksphere-3dfi.onrender.com/categories')
+        fetch('https://booksphere-server.onrender.com/categories')
         .then(res=> res.json())
         .then(data => setCategories(data))
     },[])

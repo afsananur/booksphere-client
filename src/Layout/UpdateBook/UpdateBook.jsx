@@ -24,7 +24,7 @@ const UpdateBook = () => {
         const quantity = form.quantity.value;
         const description = form.description.value;
         const newBook = { img, books_name, author_name, category_name, rating, quantity, description }
-        axios.patch(`https://booksphere-3dfi.onrender.com/allbooks/${data.category_name}/${data._id}/${action}`, newBook)
+        axios.patch(`https://booksphere-server.onrender.com/allbooks/${data.category_name}/${data._id}/${action}`, newBook)
             .then(res => {
                 console.log(res.data)
                 if(res.data.modifiedCount > 0){

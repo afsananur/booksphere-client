@@ -6,7 +6,7 @@ const AllBooks = () => {
     const [allBooks, setAllBooks]= useState([]);
 
     useEffect(()=> {
-        fetch('https://booksphere-3dfi.onrender.com/allbooks')
+        fetch('https://booksphere-server.onrender.com/allbooks')
         .then(res=> res.json())
         .then(data => setAllBooks(data))
     },[])
