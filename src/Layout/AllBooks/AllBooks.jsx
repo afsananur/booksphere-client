@@ -16,9 +16,9 @@ const AllBooks = () => {
       }, [])
     return (
         <div>
-            <h2 className="text-5xl text-center font-semibold py-4 text-cyan-700" data-aos="fade-up">All Books</h2>
+            <h2 className="lg:text-5xl text-2xl text-center font-semibold py-4 text-cyan-700" data-aos="fade-up">All Books</h2>
             
-             <div className="grid justify-center md:grid-cols-4 gap-4 py-6" >
+             <div className="grid justify-center lg:grid-cols-4 md:grid-cols-3 gap-4 py-6" >
                     {allBooks.map(allbookscard => <AllBooksCard key={allbookscard._id} allbookscard={allbookscard}></AllBooksCard>)}
                 </div>
         </div>

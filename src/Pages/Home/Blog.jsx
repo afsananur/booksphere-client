@@ -11,13 +11,13 @@ const Blog = () => {
       }, [])
     return (
        <div>
-        <h1 className="font-bold text-5xl text-center pt-8 text-cyan-700" >Latest Updates</h1>
+        <h1 className="font-bold lg:text-5xl text-2xl text-center pt-8 text-cyan-700" >Latest Updates</h1>
         <p className="text-center py-4">Recent from the blog</p>
          <div className="flex md:flex-row flex-col gap-6 p-6">
             <div className="md:pl-8">
 
 
-            <div className="card card-compact w-96 bg-base-100 shadow-lg mb-4 flex flex-row"  data-aos="fade-right"
+            <div className="card card-compact lg:w-96 w-90  bg-base-100 shadow-lg mb-4 flex flex-row "  data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine">
 
@@ -29,7 +29,7 @@ const Blog = () => {
   </div>
 </div>
 
-<div className="card card-compact w-96 bg-base-100 shadow-lg mb-4 flex flex-row"data-aos="fade-right"
+<div className="card card-compact lg:w-96 w-90  bg-base-100 shadow-lg mb-4 flex flex-row"data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine">
   <figure><img src="https://i.ibb.co/rF1c0cr/camera.jpg" alt="books" className="pl-3 w-96" /></figure>

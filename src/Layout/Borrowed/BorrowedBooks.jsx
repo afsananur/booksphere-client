@@ -9,7 +9,7 @@ if(isLoading){
 
     return (
         <div>
-            <h2 className="text-4xl font-bold text-center text-cyan-700 my-4">Your total Borrowed Books: {data?.length}</h2>
+            <h2 className="lg:text-4xl text-2xl font-bold text-center text-cyan-700 my-4">Your total Borrowed Books: {data?.length}</h2>
             <div className="grid justify-center lg:grid-cols-3 md:grid-cols-2 m-6  gap-4">
                 {
                     data?.map((borrowedBook, id) => <Borrowed key={id} refetch={refetch} borrowedBook={borrowedBook}></Borrowed>)
